@@ -1,5 +1,3 @@
-application: packagetravelbuilder
-version: 1
 runtime: python27
 api_version: 1
 threadsafe: yes
@@ -11,6 +9,9 @@ handlers:
 
 - url: /api/packages.*
   script: api.packages_api.app
+
+- url: /api/categories.*
+  script: api.categories_api.app
 
 libraries:
 - name: webapp2

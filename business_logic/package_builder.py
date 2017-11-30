@@ -25,5 +25,6 @@ class PackageBuilder(object):
     @staticmethod
     def build_day(date, daily_budget, categories):
         d = DayRoute(date=date, budget=daily_budget)
+
         d.build(categories)
         return d
